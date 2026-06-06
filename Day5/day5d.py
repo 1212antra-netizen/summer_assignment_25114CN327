@@ -1,11 +1,14 @@
 n=int(input("Enter a number: "))
-for i in range (2,n+1):
+i=2
+largest=0
+while i*i<=n:
     if n%i==0:
-        is_prime=True
-        for j in range (2,i):
-            if i%j==0:
-                is_prime=False
-                break
-        if is_prime:
-            print(i)
+        largest=i
+        n=n//i
+    else:
+        i+=1
+if n>largest:
+    largest=n
+print("largest prime factor is:", largest)
+
             
