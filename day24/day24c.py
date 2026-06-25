@@ -8,7 +8,7 @@ def longest_word(s):
             if len(current)>len(longest):
                 longest = current
                 current = ""
-    if len(current) > len(longest):
+    if len(current) > len(longest): 
         longest = current
     return longest
 s=input("enter sentence:")           
